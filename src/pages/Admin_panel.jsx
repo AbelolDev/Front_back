@@ -4,8 +4,8 @@ import AdminPanelSummary from "../components/AdminPanelSummary";
 import NavbarAdmin from "../components/NavbarAdmin";
 import AdminCard from "../components/AdminCard";
 
-const urlProductos = "http://localhost:8080/api/products";
-const urlUsuarios = "http://localhost:8080/api/users";
+const urlProductos = "http://204.236.219.118:8080/api/products";
+const urlUsuarios = "http://204.236.219.118:8080/api/users";
 
 const AdminPanel = () => {
   const [sizeProductos, setSizeProductos] = useState(0);
