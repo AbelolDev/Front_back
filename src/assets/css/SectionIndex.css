@@ -1,0 +1,14 @@
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;   
+  justify-content: flex-start;
+  margin: 0;                 
+}
+
+.about-text {
+  text-align: left;          
+  line-height: 1.6;         
+  font-size: 16px;           
+  padding: 0 10px;
+}
