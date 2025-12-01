@@ -5,7 +5,7 @@ import axios from "axios";
 import NavbarAdmin from "../../../components/NavbarAdmin";
 import TablaProductos from "../../../components/AdminTablaProductos";
 
-const urlProductos = "http://localhost:8080/api/products";
+const urlProductos = "http://204.236.219.118:8080/api/products";
 
 const AdminProductos = () => {
   const navigate = useNavigate();
@@ -55,7 +55,6 @@ const AdminProductos = () => {
       <main className="container my-5">
         <h5>Lista de productos</h5>
 
-        {/* === Botón igual al de AdminUsuarios === */}
         <div style={{ textAlign: "right", marginBottom: "1rem" }}>
           <Link
             to="/admin_panel/productos/producto_nuevo"

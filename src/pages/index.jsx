@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import DataLoader from "../components/DataLoader";
 
-const BaseURL = "http://localhost:8080/api/products";
+const BaseURL = "http://204.236.219.118:8080/api/products";
 
 const Index = () => {
   const [products, setProducts] = useState([]);

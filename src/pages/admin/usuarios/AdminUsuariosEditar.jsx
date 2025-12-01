@@ -4,7 +4,7 @@ import axios from "axios";
 import M from "materialize-css";
 import NavbarAdmin from "../../../components/NavbarAdmin";
 
-const API_URL = "http://localhost:8080/api/users";
+const API_URL = "http://204.236.219.118:8080/api/users";
 
 const AdminUsuarioEditar = () => {
   const { id } = useParams();

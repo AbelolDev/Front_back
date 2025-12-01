@@ -6,17 +6,14 @@ import NavbarAdmin from "../../../components/NavbarAdmin";
 const AdminProductoNuevo = () => {
   const navigate = useNavigate();
 
-  // Estados según tu API
   const [nombre, setNombre] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const [precio, setPrecio] = useState("");
   const [stock, setStock] = useState("");
 
-  // 🔥 ESTE ES EL HANDLE SUBMIT CORRECTO
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validación simple
     if (!nombre || !descripcion || !precio || !stock) {
       return alert("Completa todos los campos");
     }
@@ -32,7 +29,7 @@ const AdminProductoNuevo = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/products",
+        "http://204.236.219.118:8080/api/products",
         nuevoProducto,
         { headers: { "Content-Type": "application/json" } }
       );

@@ -11,7 +11,7 @@ const AdminUsuarios = () => {
 
   const fetchUsuarios = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/users");
+      const response = await axios.get("http://204.236.219.118:8080/api/users");
       setUsuarios(response.data);
     } catch (error) {
       console.error("Error al cargar usuarios:", error);

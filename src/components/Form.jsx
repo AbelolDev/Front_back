@@ -25,7 +25,7 @@ const Form = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/api/users");
+      const res = await fetch("http://204.236.219.118:8080/api/users");
       const users = await res.json();
 
       // Buscar usuario que coincida

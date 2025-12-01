@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import NavbarAdmin from "../../../components/NavbarAdmin";
 
-const API_URL = "http://localhost:8080/api/products";
+const API_URL = "http://204.236.219.118:8080/api/products";
 
 const AdminProductoEditar = () => {
   const { id } = useParams();
@@ -17,9 +17,6 @@ const AdminProductoEditar = () => {
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState("");
 
-  // ============================
-  // GET: Obtener un producto por ID
-  // ============================
   const fetchProducto = async () => {
     try {
       const res = await axios.get(`${API_URL}/${id}`);
@@ -41,9 +38,6 @@ const AdminProductoEditar = () => {
     fetchProducto();
   }, []);
 
-  // ============================
-  // PUT: Actualizar un producto
-  // ============================
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -63,9 +57,6 @@ const AdminProductoEditar = () => {
     }
   };
 
-  // ============================
-  // Estados de carga / error
-  // ============================
   if (cargando) return <p>Cargando producto...</p>;
   if (error) return <p>{error}</p>;
 

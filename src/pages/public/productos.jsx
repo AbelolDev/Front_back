@@ -69,7 +69,7 @@ const stockImages = [
 
 
 export default function Productos() {
-  const baseURL = "http://localhost:8080/api/products";
+  const baseURL = "http://204.236.219.118:8080/api/products";
 
   return (
     <>
